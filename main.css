@@ -1,0 +1,90 @@
+body{
+	font-size: 14pt;
+
+}
+*{
+	margin: 0;
+	padding: 0;
+	
+}
+
+.head {box-shadow: 1px 1px 2px black;
+	background: gold;
+	margin-bottom: 1%;
+}
+h2{color: red;}
+h1,h3,label,h2{text-align: center;}
+label, input{display: block; margin: 5% auto; width: 15em}
+
+input{
+	padding: 0.5em 2px;
+}
+.none{display: none;}
+.login ol li{
+	
+	display: inline-block;
+	margin: 1% 1% ;
+	text-align: center;
+	width: 20%;
+}
+.login img{
+	display: block;
+	margin: 0 auto;
+	width: 2em;
+
+}
+.login input{
+	outline: none;
+	border: none;
+	border-bottom: 3px solid black;
+
+}
+.login input:hover{
+	outline: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 1em;
+}
+
+.choose li{
+	display: inline-block;
+	width: 45%;
+	text-align: center;
+	padding: 2% 0;
+	margin: 3% 0.5%;
+
+}
+
+.choose img{
+	margin: 0 auto;
+	display: block;
+	width: 5em;
+	box-shadow: 1px 1px 2px black;
+}
+
+.contac{
+  box-shadow: 1px 1px 2px black;
+	border-radius: 1em;
+	text-align: center;
+	background: gold;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	position: fixed;
+	top: 0;
+	width: 7em;
+	padding: 0 2%;
+}
+.contac li{
+	width: 90%;
+	margin: 2% auto; 
+	padding: 2%;
+	background: #ddd;
+	display: block;
+	font-weight: bolder;
+	font-size: 120%;
+	color: red;
+}
+
+h3{box-shadow: 1px 1px 2px black;
+ margin-top: 3%;
+ background: gold;
+}
