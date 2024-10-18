@@ -42,8 +42,8 @@ alcanse: ["5x 10x", "5x 7x", "5x 7x", "5x 10x 50x", "5x 10x","5x 10x", "5x 10x 1
 var h14 = {min : [1,4,10,12,15,17,23,25,41,58],
 alcanse: ["5x 10x 17x","5x 12x","5x 10x","5x+","5x 10x","5x 10x 25x 50x+","5x 10x 20x 35x+", "5x 10x","5x 20x 50x+","5x 10x 15x","5x 10x"]};
 var h15= {min : [1,5,10,13,15,19,20],alcanse: ["5x","5x 10x","5x 10x","5x 10x","5x 10x"]};
-var h16 = {min : [1,10,12,15,22,25,41,49,52,58],
-alcanse: ["5x+","5x+","5x 10+","5x+","5x 10+","5x+","5x 10+","5x+","5x 10+","5x+"]};
+var h16 = {min : [1,5,7,10,17,18,31,37,44,45,58],
+alcanse: ["5x+","5x 10x","5x+","5x 10+","5x+","5x 10+","5x+","5x 10+","5x+","5x 10x 20x 40x+","5x+"]};
 var h17 = {min :  [1,10,12,15,22,25,41,49,52,58],
 alcanse: ["5x+","5x+","5x 10+","5x+","5x 10+","5x+","5x 10+","5x+","5x 10+","5x+"]};
 var h18 = {min : [1,10,12,15,22,25,41,49,52,58],alcanse: ["5x+","5x+","5x 10+","5x+","5x 10+","5x+","5x 10+","5x+","5x 10+","5x+"]};
@@ -75,8 +75,8 @@ if (casaAposta==1) {
  h14 = {min : [3,6,8,11,12, 13, 17,24,27,33,35,39,42,47,51],
  alcanse: ["5x 10x 15x 20x", "5x+","5x+","5x 10x", "5x+", "5x 10x 20x 30x 40x+", "5x 10x 25x 35x+","5x 10x 25x 35x+","5x 10x 15x","5x 20x 50x+","5x 10x 15x","5x","5x 10x","5x","5x 10x"]};
  h15= {min : [0,3,6,12,14,16,20],alcanse: ["5x 10x 20x+","5x 10x 15x+","5x+","5x+","5x+","5x+","5x+"]};
- h16 = {min : [3,6,12,41,43,49,55,59],alcanse: ["5x 10x 20x+","5x 10x 15x+","5x+","5x+","5x+","5x+","5x+","5x"]};
- h17 = {min : [3,6,12,41,43,49,55,59],alcanse: ["5x 10x 20x+","5x 10x 15x+","5x+","5x+","5x+","5x+","5x+","5x"]};
+ h16 = {min : [38,40,45,48,50,49,55,59],alcanse: ["5x 10x 20x+","5x 10x 15x+","5x 10x+","5x 10x+","5x+","5x+","5x+","5x"]};
+ h17 = {min : [3,6,12,40,45,48,50,55,59],alcanse: ["5x 10x 20x+","5x 10x 15x+","5x+","5x+","5x+","5x+","5x+","5x","5x 10x+"]};
  h18 = {min : [3,6,12,41,43,49,55,59],alcanse: ["5x 10x 20x+","5x 10x 15x+","5x+","5x+","5x+","5x+","5x+"]};
  h19 = {min : [3,6,12,41,43,49,55,59],alcanse: ["5x 10x 20x+","5x 10x 15x+","5x+","5x+","5x+","5x+","5x+"]};
 
@@ -103,6 +103,7 @@ function show(argument) {
 	if (hora.min[i] < mints) { continue;} 
 		palpites.innerHTML+='<li><strong>'+time+'h:'+hora.min[i]+'min</strong> Alcanse possivel<em>: '+hora.alcanse[i]+'<em></li>';
 	}
+	palpites.innerHTML+='<li><strong>Calculando Novos palpites ...</strong></li>';
 }
 show();
 setInterval(show,9000);
@@ -113,4 +114,3 @@ var contac = function(disp){
 	if (disp) {num.style.display = 'none';}
 		else{num.style.display = 'block';}
 }
-
