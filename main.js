@@ -53,41 +53,8 @@ var h20 = {min : [],alcanse: []};
 var h21 = {min : [],alcanse: []};
 var h22 = {min : [],alcanse: []};
 var h23 = {min : [],alcanse: []};
-}
 
 
-if (casaAposta==1) {
- h00 = {min : [],alcanse: []};
- h1 = {min : [37],alcanse: ["5x 20x 50x+"]};
- h2 = {min : [36,48,58],alcanse: ["5x 20x 50x+","5x 20x 50x+","5x 20x 50x+"]};
- h3 = {min : [14],alcanse: ["5x 20x 50x+"]};
- h4 = {min : [],alcanse: []};
- h5= {min : [19,27],alcanse: ["5x 20x 50x+","5x 20x 50x+"]};
- h6 = {min : [14,26,27,38],alcanse: ["5x 20x 50x+","5x 20x 50x+","5x 20x 50x+","5x 20x 50x+"]};
- h7 = {min : [],alcanse: []};
- h8 = {min : [28],alcanse: ["5x 20x 50x+"]};
- h9 = {min : [44],alcanse: ["5x 20x 50x+"]};
-
- h10 = {min : [],alcanse: []};
- h11 = {min : [15,26],alcanse: ["5x 20x 50x+","5x 20x 50x+"]};
- h12 = {min : [6,43],alcanse: ["5x 20x 50x+","5x 20x 50x+"]};
- h13 = {min : [41, 43, 45, 49,55,58, 59],alcanse: ["5x", "5x 10x","5x 12x", "5x 15x", "5x 10x 20x", "5x 10x", "5x"]};
- h14 = {min : [3,6,8,11,12, 13, 17,24,27,33,35,39,42,47,51],
- alcanse: ["5x 10x 15x 20x", "5x+","5x+","5x 10x", "5x+", "5x 10x 20x 30x 40x+", "5x 10x 25x 35x+","5x 10x 25x 35x+","5x 10x 15x","5x 20x 50x+","5x 10x 15x","5x","5x 10x","5x","5x 10x"]};
- h15= {min : [0,3,6,12,14,16,20],alcanse: ["5x 10x 20x+","5x 10x 15x+","5x+","5x+","5x+","5x+","5x+"]};
- h16 = {min : [3,6,12,41,43,49,55,59],alcanse: ["5x 10x 20x+","5x 10x 15x+","5x+","5x+","5x+","5x+","5x+","5x"]};
- h17 = {min : [3,6,12,41,43,49,55,59],alcanse: ["5x 10x 20x+","5x 10x 15x+","5x+","5x+","5x+","5x+","5x+","5x"]};
- h18 = {min : [3,6,12,41,43,49,55,59],alcanse: ["5x 10x 20x+","5x 10x 15x+","5x+","5x+","5x+","5x+","5x+"]};
- h19 = {min : [3,6,12,41,43,49,55,59],alcanse: ["5x 10x 20x+","5x 10x 15x+","5x+","5x+","5x+","5x+","5x+"]};
-
- h20 = {min : [],alcanse: []};
- h21 = {min : [],alcanse: []};
- h22 = {min : [],alcanse: []};
- h23 = {min : [],alcanse: []};
- h24 = {min : [],alcanse: []};
-
-
-}
 
 if (casaAposta==1) {
  h00 = {min : [],alcanse: []};
@@ -118,6 +85,9 @@ if (casaAposta==1) {
  h22 = {min : [],alcanse: []};
  h23 = {min : [],alcanse: []};
  h24 = {min : [],alcanse: []};
+
+
+}
 
 function show(argument) {
 	var palpites = seek('.Palpites ul');
