@@ -53,7 +53,7 @@ var h20 = {min : [],alcanse: []};
 var h21 = {min : [],alcanse: []};
 var h22 = {min : [],alcanse: []};
 var h23 = {min : [],alcanse: []};
-
+}
 
 
 if (casaAposta==1) {
