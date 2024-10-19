@@ -2,7 +2,7 @@ var user={
 	num : ['777'],
 	senha: ['Ganho']
 }
-var casaAposta = 0, h1;
+var casaAposta, h1;
 
 var login = function(){
 	h1 = seek('h1');
@@ -30,6 +30,8 @@ var choose = function(num){
 	casaAposta=num;
 	seek('.choose').style.display='none';
 	h1.innerHTML='Bem-vindo e boa sorte!';
+	show();
+setInterval(show,9000);
 	seek('.Palpites').style.display='block';
 	seek('.hour').style.display='block';
 }
