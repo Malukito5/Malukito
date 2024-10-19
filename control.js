@@ -10,12 +10,14 @@ var login = function(){
 
 		if (input[0].value == '') { h1.innerHTML='coloque o numero ou contacte o criador';}
 		else if (input[0].value == '') { h1.innerHTML='coloque a senha ou contacte o criador';}
-		else{
+		else{console.log("Holla");
 			for (var i=0; i<user.num.length; ++i) {
-				if (user.num[i]==input[0].value && user.senha[i] == input[1].value) {
+				if (trimer(user.num[i])==trimer(input[0].value) && trimer(user.senha[i]) == trimer(input[1].value)) {
+					console.log("in");
 					seek('.login').style.display='none';
 					h1.innerHTML='Escolha sua casa de aposta';
 					seek('.choose').style.display='block';break;}
+					else{console.log("not in");}
 					
 			}
 		}
@@ -30,4 +32,9 @@ var choose = function(num){
 	h1.innerHTML='Bem-vindo e boa sorte!';
 	seek('.Palpites').style.display='block';
 	seek('.hour').style.display='block';
+}
+var trimer=function(str){
+	str = str.trim();
+	str = str.toLowerCase();
+	return str;
 }
