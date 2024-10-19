@@ -1,6 +1,6 @@
 var user={
-	num : ['123'],
-	senha: ['Malukito']
+	num : ['777'],
+	senha: ['Ganho']
 }
 var casaAposta = 0, h1;
 
