@@ -1,65 +1,65 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Malukito boot</title>
-</head>
-<body>
+  </head>
+  <body>
 	<div class="head">
-			<h1>Malukito - Caçador de Rosas</h1>
-		
-		
+	  <h1>Malukito - Caçador de Rosas</h1>
+
+
 	</div>
 	<div class="body">
-		<div class="login">
-			<h3>Aceder ao boot</h3>
-			<label>Numero de telefone</label>
-			<input type="number" placeholder="Ex: 9200871538" />
-			<label>Codigo de acesso</label>
-			<input type="password" placeholder="senha" />
-			<input type="button" value="Entrar" onclick="login()" />
-			
-			<ol>
-				<li><strong>Contactar criador:</strong></li>
-				<li><a href="https://m.facebook.com/profile.php?id=100091666827276"><img src="face.png"></a></li>
-				<li onclick="contac(0)"><img src="what.png"></li>
-				<li onclick="contac(0)"><img src="phone.png"></li>
-			</ol>
-			
-		</div>
+	  <div class="login">
+		<label>Numero de Acesso</label>
+		<input type="number" placeholder="Ex: 9200871538" />
+		<label>Codigo de acesso</label>
+		<input type="password" placeholder="senha" />
+		<input type="button" value="Entrar" onclick="login()" />
 
-		<div class="choose none">
-			
-			<ul>
-				<li onclick="choose(0)"><img src="bantu.jpeg"></li>
-				<li onclick="choose(1)"><img src="pre.jpeg"></li>
-				<li onclick="choose(0)"><img src="ele.jpeg"></li>
-				<li onclick="choose(0)"><img src="888b.png"></li>
-			</ul>
-			
-		</div>
+		<ol>
+		  <li><strong>Contactar via:</strong></li>
+		  <li><a href="https://m.facebook.com/profile.php?id=100091666827276"><img src="face.png"></a></li>
+		  <li onclick="contac(0)"><img src="what.png"></li>
+		  <li onclick="contac(0)"><img src="phone.png"></li>
+		</ol>
 
-		
-		<div class="Palpites none">
-			<h3>Palpites</h3>
-			<ul>
-				<li><strong>17h:40</strong> Alcanse possivel<em> 5x 11x 17x<em></li>
-			</ul>
-		</div>
-		<div class="hour none">
-			<h3>Horas boas para se jogar</h3>
-			<ul >
-				<li><strong>6H 5H 22H 1H</strong></li>
-			</ul>
-		</div>
-		<div class="contac none">
-				<li onclick="contac(1)">Fechar</li>
-				<p>Ligue ou pesquise no whatsapp: <strong>928089975</strong></p>
-			</div>
+	  </div>
+
+	  <div class="choose none">
+
+		<ul>
+		  <li onclick="choose(0)"><img src="bantu.jpeg"></li>
+		  <li onclick="choose(1)"><img src="pre.jpeg"></li>
+		  <li onclick="choose(0)"><img src="ele.jpeg"></li>
+		  <li onclick="choose(0)"><img src="888b.png"></li>
+		</ul>
+
+	  </div>
+
+
+	  <div class="Palpites none">
+		<h3>Palpites</h3>
+		<ul>
+		  <li><strong>17h:40</strong> Alcanse possivel<em> 5x 11x 17x<em></li>
+		</ul>
+	  </div>
+	  <div class="hour none">
+		<h3>Horas boas para se jogar</h3>
+		<ul >
+		  <li><strong>6H 5H 22H 1H</strong></li>
+		</ul>
+	  </div>
+	  <div class="contac none">
+		<li onclick="contac(1)">Fechar</li>
+		<p>Ligue ou pesquise no whatsapp: <strong>928089975</strong></p>
+	  </div>
 	</div>
+	<div id="manager" onclick="refresh()">&lt;</div>
 	<script type="text/javascript" src="control.js"></script>
-<script type="text/javascript" src="main.js"></script>
-</body>
+	<script type="text/javascript" src="main.js"></script>
+  </body>
 </html>
