@@ -92,7 +92,7 @@ function show(argument) {
 	var palpites = seek('.Palpites ul');
 	var time = new Date().getHours();
 	var mints = new Date().getMinutes();
-   if(time ==12){return 0;}
+   
 	var hora = "h"+time;
 	hora = eval(hora);
 
