@@ -1,6 +1,6 @@
 var user={
 	num : ['755',"890"],
-	senha: [Cubo,"Luz"]
+	senha: ["Cubo","Luz"]
 };
 var casaAposta, h1;
 
