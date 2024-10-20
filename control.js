@@ -1,7 +1,7 @@
 var user={
-	num : ['777'],
-	senha: ['Ganho']
-}
+	num : ['777',"890"],
+	senha: ['Ganho',"Luz"]
+};
 var casaAposta, h1;
 
 var login = function(){
