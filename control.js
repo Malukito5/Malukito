@@ -1,6 +1,6 @@
 var user={
 	num : ['755',"890","333","891","888"],
-	senha: ["Cubo","Luz","festa","Brilho","Vida"],
+	senha: ["Cubo","Luz","festa","Brilho","vida"],
 	time: [new Date("2024/10/23"),new Date("2024/10/22"),new Date("2024/10/27"),new Date("2024/10/24"),new Date("2024/11/21")]
 };
 var casaAposta, h1;
@@ -9,7 +9,8 @@ var login = function(){
 	var date = new Date();
 	var month = date.getMonth(),userM;
    	var year = date.getFullYear();
-	var day = date.getDate(),userD;
+	var day = date.getDate(),userD,exp;
+	
 	var time = new Date();
 	h1 = seek('h1');
 	var input = seek('login input','c');
@@ -22,13 +23,14 @@ var login = function(){
 					userD = user.time[i].getDate();
 					userM = user.time[i].getMonth();
 					userY = user.time[i].getFullYear();
-				if(userD > day && userM >= month){
+					exp =(userM > month)? (30-day)+userD:exp=userD - day;
+				if(exp > 0){
 					
 					console.log("in");
 					seek('.login').style.display='none';
 					h1.innerHTML='Escolha sua casa de aposta';
 					seek(".add").style.display="block";
-					seek("#left").innerHTML= userD+"/"+userM+"/"+userY;
+					seek("#left").innerHTML= userD+"/"+(userM+1)+"/"+userY;
 					seek('.choose').style.display='block';break;
 				}else{alert(" Seu tempo expirou renove o acesso");}
 					
@@ -55,4 +57,7 @@ var trimer=function(str){
 	str = str.toLowerCase();
 	return str;
 };
+
+
+	
 
