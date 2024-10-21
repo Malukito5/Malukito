@@ -91,8 +91,8 @@ function show(argument) {
 	var time = new Date().getHours();
 	var mints = new Date().getMinutes();
  
-	var hora = h16;
-	//hora = eval(hora);
+	var hora = "h"+time;
+	hora = eval(hora);
 
 	palpites.innerHTML='';
 	if (!hora.min.length) {palpites.innerHTML="<h2>Esta Hora não Possui palpites Ainda </h2>"; return false;}
