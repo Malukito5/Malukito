@@ -1,11 +1,3 @@
-onerror= function (sms, url, line) {
-	var titulo = 'Erro encontrado: '
-	alert(titulo+sms);
-	alert(titulo+"localização: "+ url);
-	alert(titulo+"linha: "+ line);
-	// body...
-};
-
 function seek(ent, type, exc) {
 	if(!exc){exc=document;}
 
@@ -21,7 +13,7 @@ var h00h1, h2, h3, h4, h5,h6, h7, h8, h9, h10,h11,h12,h13,h14,h15,h16,h17,h18,h1
 
 function data(){
 if(casaAposta === 1){ 
- h00 = {min : [9,12,22,29,40,47,49,55],
+ h00 = {min : [00,11,16,29,40,47,49,55],
 alcanse: ["5x+","5x+","5x 10+","5x+","5x 10+","5x+","5x 10+","5x+"]};
  h1 = {min : [9,12,22,29,40,47,49,55],
 alcanse: ["5x+","5x+","5x 10 35x 50x+","5x+","5x 10+","5x+","5x 10+","5x+"]};
@@ -32,31 +24,31 @@ alcanse: ["5x+","5x 10x 35x 50x+","5x 10+","5x+","5x 10+","5x+","5x 10+","5x+"]}
  h5= {min : [40,49,59],alcanse: ["5x 20x 50x+","5x 20x 50x+","5x+"]};
  h6 = {min : [00,3,4,8,11,16,19,20,25,26,28,29,34,41,43],alcanse: ["5x 10x 25x 35x+","5x 10x 15x+","5x 10x 25x 35x+","5x 10x+","5x+","5x+","5x+","5x 10x 15x+","5x 10 35x 50x+","5x+","5x 10+","5x+","5x 10+","5x+"]};
  h7 = {min : [11,15,22,23,27,31,38,42,44,48,56,58],alcanse: ["5x 10x 25x 35x 50x+","5x 10x 15x+","5x 10x+","5x 10x+","5x 10x","5x 20x 50x+","5x 10x+","5x 10x+","5x+","5x 10x 20x 35x+"]};
- h8 = {min : [1,4,6,10,14,16,25,26,31,32,38,39,44,45,56,58],alcanse: ["5x+","5x 10x 15x+","5x+","5x 20x 50x+","5x 10x 15x+","5x 20x 50x+","5x 20x 50x+","5x 10x 15x+","5x 10x 15x+","5x 10x 15x+","5x+","5x 10x 25x+", "5x 10x 25x+"]};
- h9 = {min : [00,21,29,31,33,37, 39,41,42, 45,48,52,54, 55],
+ h8 = {min : [1,4,6,10,14,16,25,26,30,35,42,43,51,52,56],alcanse: ["5x+","5x 10x 15x+","5x+","5x 20x 50x+","5x 10x 15x+","5x 20x 50x+","5x 20x 50x+","5x 10x 15x+","5x 10x 15x+","5x 10x 15x+","5x+","5x 10x 25x+", "5x 10x 25x+"]};
+ h9 = {min : [00,21,29,31,33,37, 39,41,42, 45,48,52,54, 56],
 alcanse: ["5x 10x 25x 35x+","5x 15x 25x+","5x 15x 25x+","8x 11x",'10x 20x 40x', '5x 7x 12x', '5x 9x', '5x 7x', '5x 7x', '10x 20x 30x 60x', '7x 10x', '5x 10x',"5x 10x","5x 10x","5x 10x"]};
 
- h10 = {min : [1, 4,7, 8,10,14,15,22, 24,28,30,31, 36, 39,43,45,46,48,50,55,59],
+ h10 = {min : [1, 4,7, 8,10,15,22, 24,28,31,34, 37, 43,45,46,48,52,53],
 alcanse: ['10x 15x 20x','10x 14x 19x','5x 7x',"5x 10x","5x 10x", '7x 12x 15x','8x 18x 25x','5x 6x','5x 9x 11x', '5x 7x', '20x 50x 100x+','10x 20x 35x','10x 20x 35x','7x 10c','10x 20x','8x 15x', '5x','10x 20x 50x 80x']};
- h11 = {min : [2,5,8,10,15,26,39,43,46,47,53,54],alcanse: ['5x 20x 40x 100x',"5x 20x 50x+","5x 20x 50x+","5x 20x 50x+"]};
+ h11 = {min : [3,4,6,15,26,34,37,43,46,52],alcanse: ['5x 20x 40x 100x',"5x 20x 50x+","5x 20x 50x+","5x 20x 50x+"]};
  h12 = {min : [5,8,9,17,26,34,37,40,43,46,52],
 alcanse: ['5x 20x 40x 100x',"5x 20x 50x+","5x 20x 50x+","5x 20x 50x+"]};
  h13 = {min : [5,8,14,21,27,29,35,38,39, 41,42, 45,49, 51, 52, 55,56, 58],
 alcanse: ["5x 10x", "5x 7x", "5x 7x", "5x 10x 50x", "5x 10x","5x 10x", "5x 10x 17x","5x 12x"]};
  h14 = {min : [1,4,6,9,11,13,15,17,23,25,41,58],
 alcanse: ["5x 10x 17x","5x 12x","5x 10x","5x+","5x 10x","5x 10x 25x 50x+","5x 10x 20x 35x+", "5x 10x","5x 20x 50x+","5x 10x 15x","5x 10x"]};
- h15= {min : [00,8,10,13,15,18,20,24,25,28,34,35,38,40,44,47,48,54,56],alcanse: ["5x","5x 10x","5x 10x","5x 10x","5x 10x"]};
- h16 = {min : [1,5,7,11,14,15,17,20,25,29,31,36,38,40,42,44,46,51,54,57,58],
-alcanse: ["5x+","5x 10x","5x+","5x 10+","5x+","5x 10+","5x+","5x 10+","5x+","5x 10x 20x 40x+","5x+"]};
- h17 = {min :  [2,3,6,12,14,17,18,21,24,27,29,30,35,39,40,51,52,56,57,59],
+ h15= {min : [1,5,10,13,15,18,24,25],alcanse: ["5x","5x 10x","5x 10x","5x 10x","5x 10x"]};
+ h16 = {min : [1,5,7,10,17,18,31,38,42,44,46,51,54,58],
+alcanse: [0,0,0,0,0,0,0,0,0,0,0,0,"5x 10x 20x+",0]};
+ h17 = {min :  [1,3,11,14,17,18,20,27,29,30,35,39,40,54,52,56,57,59],
 alcanse: ["5x+","5x+","5x+","5x 10x","5x 10+","5x+","5x 10+","5x+","5x 10+","5x+","5x","5x 10x+","5x 10x+","5x 10x+","5x 10x+"]};
- h18 = {min : [2,4,6,10,13,15,20,22,26,35,29,32,35,36],alcanse: ["5x+","5x+","5x 10+","5x+","5x 10+","5x+","5x 10+","5x+","5x 10+","5x 10x 20x 35x 50x+"]};
- h19 = {min : [2,7,12,15,22,26,29,34,35,39, 42],alcanse: ["5x+","5x+","5x 10+","5x+","5x 10+","5x+","5x 10+","5x+","5x 10x 15x+","5x 10x"]};
+ h18 = {min : [2,4,6,10,13,15,19,26,35,29,32,35,36],alcanse: ["5x+","5x+","5x 10+","5x+","5x 10+","5x+","5x 10+","5x+","5x 10+","5x 10x 20x 35x 50x+"]};
+ h19 = {min : [2,7,12,15,22,26,29,34,35,40, 41,43,48,56],alcanse: ["5x+","5x+","5x 10+","5x+","5x 10+","5x+","5x 10+","5x+","5x 15x 30x+","5x 10x"]};
 
- h20 = {min : [2,4,8,11,15,21,24,27,35,39, 42],alcanse: ["5x+","5x+","5x 10+","5x+","5x 10+","5x 10x 20x 50x+","5x 10+","5x+","5x 10x 15x+","5x 10x"]};
- h21 = {min : [7,12,14,19,20,22,24,27,36,44, 49],alcanse: ["5x 10x 30x 50x+","5x+","5x 10+","5x+","5x 10+","5x 10x 20x 50x+","5x 10+","5x+","5x 10x 15x+","5x 10x","5x 10x+"]};
- h22 = {min : [4,5,11,15,18,19,22,24,27,36,44, 49],alcanse: ["5x 10x 30x 50x+","5x+","5x 10+","5x+","5x 10+","5x 10x 20x 50x+","5x 10+","5x+","5x 10x 15x+","5x 10x","5x 10x+"]};
- h23 = {min : [7,12,14,19,20,22,24,27,36,44, 49],alcanse: ["5x 10x 30x 50x+","5x+","5x 10+","5x+","5x 10+","5x 10x 20x 50x+","5x 10+","5x+","5x 10x 15x 25x 35x+","5x 10x","5x 10x+"]};
+ h20 = {min : [7,13,20,29,34,37,39,40, 47,51,54,57,59],alcanse: [0,0,0,0,0,0,0,0,"5x 15x 30x 50x+","5x 15x 30x+","5x 10x 20x+",0,0,"5x 15x 30x+"]};
+ h21 = {min : [00,6,8,29,36,40,49,51],alcanse: ["5x 10x 30x 50x+","5x+","5x 10+","5x+","5x 10+","5x 10x 20x 50x+","5x 10+","5x+","5x 10x 15x+","5x 10x","5x 10x+"]};
+ h22 = {min : [12,25,40,42,43,45,55],alcanse: ["5x 10x 30x 50x+","5x+","5x 10+","5x+","5x 10+","5x 10x 20x 50x+","5x 10+","5x+","5x 10x 15x+","5x 10x","5x 10x+"]};
+ h23 = {min : [17,26,35,38,49],alcanse: ["5x 10x 30x 50x+","5x+","5x 10+","5x+","5x 10+","5x 10x 20x 50x+","5x 10+","5x+","5x 10x 15x 25x 35x+","5x 10x","5x 10x+"]};
 
 }
 
@@ -93,7 +85,7 @@ else{
 }}
 
 function show(argument) {
-	data();
+	data(); showinfo();
 	var alc =function(val){if(!val){return "5x 10x+";}else return val;}
 	var palpites = seek('.Palpites ul');
 	var time = new Date().getHours();
@@ -122,3 +114,14 @@ var contac = function(disp){
 var refresh=function(){
 	window.location.reload();
 };
+
+var frases =["Horas boa 8h, 10h, 14h, 22h,5h","Tem graficos que atrasam 1min","tire sempre proteção uma das casas","Faça 3 tentativas nos palpites","Antes de seguir veja se o grafico é estavel","Faça metas, não jogue durante varias horas",
+"faça o curso do Malukito pra incrimentar suas habilidades de lucro","O boot é actualizado todos dias não se desanime","Tenha uma boa sorte","se falhar 3 palpites consecutivos aguarde melhor momento","Os palpites serão calculados por hora", 
+"Paciência é uma virtude", "Jogue com ambição apenas nos lucros"
+];
+
+function showinfo(){
+	var info = seek("#info");
+	var random = Math.floor(Math.random() * frases.length);
+	info.innerHTML=frases[random];
+}
