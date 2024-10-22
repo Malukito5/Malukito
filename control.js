@@ -1,7 +1,7 @@
 var user={
-	num : ['755',"890","333","891","888"],
-	senha: ["Cubo","Luz","festa","Brilho","vida"],
-	time: [new Date("2024/10/23"),new Date("2024/10/22"),new Date("2024/10/27"),new Date("2024/10/24"),new Date("2024/11/21")]
+	num : ['755',"980","333","891","888"],
+	senha: ["Cubo","azul","festa","Brilho","vida"],
+	time: [new Date("2024/10/23"),new Date("2024/10/25"),new Date("2024/10/27"),new Date("2024/10/24"),new Date("2024/11/21")]
 };
 var casaAposta, h1;
 
