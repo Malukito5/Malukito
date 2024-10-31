@@ -1,8 +1,8 @@
 body{
 	font-size: 12pt;
-	background-size:20%;
 	background-image:url("aviator.jpg");
 	background-color:#ccc;
+	background-size:20%;
 }
 *{
 	margin: 0;
@@ -111,7 +111,16 @@ h3{box-shadow: 1px 1px 2px black;
  margin-top: 3%;
  background: gold;
 }
-
+.Palpites li:first-child{
+  height:2em;
+  padding:5% 0;
+  text-align:center;
+  font-size: 120%;
+}
+.Palpites li:first-child em{
+  font-size: 150%;
+  color:pink;
+}
 .Palpites li, .hour li{
   background-color:white;
   border:2px inset gold;
@@ -135,9 +144,7 @@ h3{box-shadow: 1px 1px 2px black;
   color:gold;
  
 }
-
 .add{
   text-align:right;
   color:gold;
 }
-	
