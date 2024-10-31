@@ -118,7 +118,7 @@ h3{box-shadow: 1px 1px 2px black;
   font-size: 120%;
 }
 .Palpites li:first-child em{
-  font-size: 150%;
+  font-size: 100%;
   color:gold;
 }
 .Palpites li, .hour li{
