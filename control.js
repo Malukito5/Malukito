@@ -1,7 +1,7 @@
 var user={
-	num : ["123",'906',"550","111","892","888","507","350"],
-	senha: ["mel","estrela","brita","festa","escuro","abelha","lobo","test"],
-	time: [new Date("2024/11/24"),new Date("2024/11/4"),new Date("2024/11/6"),new Date("2024/11/30"),new Date("2024/11/26"),new Date("2024/11/21"), new Date("2024/11/11"),new Date("2024/11/1") ]
+	num : ["123",'906',"550","112","892","888","507","358"],
+	senha: ["mel","estrela","pedra","fugete","escuro","abelha","lobo","doc"],
+	time: [new Date("2024/11/24"),new Date("2024/11/7"),new Date("2024/11/10"),new Date("2024/11/30"),new Date("2024/11/26"),new Date("2024/11/21"), new Date("2024/11/11"),new Date("2024/11/15") ]
 };
 var casaAposta, h1;
 
