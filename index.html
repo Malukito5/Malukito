@@ -8,7 +8,20 @@
   </head>
   <body>
 	<div class="head">
-	  <h1>Malukito - Caçador de Rosas</h1>
+	  <h1>Malukito - Aviator box</h1>
+	  <fieldset class="dreamH">
+		<section>
+		  <div class="clock">
+			<div class="container">
+			  <h2 id="hour">00</h2>
+			  <h2 class="dot">:</h2>
+			  <h2 id="minutes">00</h2>
+			  <h2 class="dot">:</h2>
+			  <h2 id="seconds">00</h2>
+			</div>
+		  </div>
+		</section>
+	  </fieldset>
 	  <ol class="add none">
 		<li>Tempo de uso até: </li>
 		<li id="left">00 dias</li>
@@ -60,8 +73,45 @@
 		<p>Ligue ou pesquise no whatsapp: <strong>928089975</strong></p>
 	  </div>
 	</div>
+	
+	
+	  
 	<div id="manager" onclick="refresh()">&lt;</div>
+	
 	<script type="text/javascript" src="control.js"></script>
 	<script type="text/javascript" src="main.js"></script>
+<script>
+	function clock(){
+
+ var hours = document.getElementById('hour');
+ var minutes = document.getElementById('minutes');
+ var seconds = document.getElementById('seconds');
+ var ampm = document.getElementById('ampm');
+
+ var h = new Date().getHours();
+ var m = new Date().getMinutes();
+ var s = new Date().getSeconds();
+ var am = "AM";
+
+ /*Convert 24 Hour Time To 12 Hour with AM PM Indicator
+     if(h > 12){
+         h = h - 12;
+         var am = "PM";
+     }*/
+
+     //Add 0 to the beginning of number if less than 10
+ h = (h < 10) ? "0" + h : h;
+ m = (m < 10) ? "0" + m : m;
+ s = (s < 10) ? "0" + s : s;
+
+ hours.innerHTML = h;
+ minutes.innerHTML = m;
+ seconds.innerHTML = s;
+ ampm.innerHTML = am;
+
+ }
+
+ var interval = setInterval(clock, 1000);
+</script>
   </body>
 </html>
