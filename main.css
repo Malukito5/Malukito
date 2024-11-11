@@ -10,15 +10,15 @@ body{
 	
 }
 
-.head {border-bottom:3px inset gold;
+.head {border-bottom:3px inset rgba(255,255,255,0.1);
 	background: ;
 	margin-bottom: 1%;
 	background-color:rgba(0,0,0,0.3);
 }
 h1{font-size:120%;
 padding:2% 0;
-color:gold;
-text-shadow:1px 1px black;
+color:#f00;
+text-shadow:15px 25px rgba(0,0,0,0.1);
 }
 h2{color: red;}
 h1,h3,label,h2{text-align: center;}
@@ -28,12 +28,11 @@ input{
 	padding: 0.5em 2px;
 }
 .login{
-  border:8px outset gold;
   color:gold;
   margin:0 auto;
   width:90%;
   max-width:30em;
-  background-color:rgba(0,0,0,0.3);
+  background-color:rgba(3,5,2,0.5);
 }
 .none{display: none;}
 .login ol li{
@@ -52,15 +51,14 @@ input{
 .login input{
 	outline: none;
 	border: none;
-	border-bottom: 2px solid gold;
-	background-color:;
+	border-bottom: 2px solid #f00;
+	background-color:rgba(255,255,255,0.5);
 
 }
 .login input[type="button"]{
   background-color:gold;
 }
-.login input:hover{
-	outline: 1px solid rgba(0, 0, 0, 0.2);
+.login input{
 	border-radius: 1em;
 }
 .login ol{
@@ -148,3 +146,180 @@ h3{box-shadow: 1px 1px 2px black;
   text-align:right;
   color:gold;
 }
+
+/*dream*/
+
+.timer li, .ecept{
+  box-shadow:0 0 5px black;
+}
+.dream ol li{
+  display:inline-block;
+  width:18%;
+  margin:1% 1% 1% 4%;
+  
+  text-align:center;
+  padding:0.5% 0;
+  border-radius:10%;
+}
+.upDown li{
+  width:15%;
+  margin-left:5%;
+  margin-right:0;
+}
+.dream ol .odd{width:33%;}
+input{
+  font-size:100%;
+  display:block;
+  width:80%;
+  padding:2% 1%;
+  margin:2% auto;
+  background-color:#ddd;
+  border:none;
+  border-radius:10%;
+  outline:none;
+}
+
+#proba em{
+  font-size:60%;
+}
+#proba div{
+  overflow:scroll;
+  display:inline-block;
+  width:47%;
+  margin:1% 0.5%;
+  padding:1% 0.2%;
+  border:1px solid black;
+  text-align:center;
+  vertical-align:top;
+  height:4.5em;
+}
+.dream ol i{width:1.8em;
+font-weight:bold;
+color:rgba(0,0,0,0.2);
+padding:5% 2%;
+display:block;
+margin:0 auto;}
+
+.dream ol i{box-shadow:0 0 5px black;
+  border-radius:0 0 50% 50%;
+  background-color: #2DE9F5;
+}
+.up i{
+  border-radius:50% 50% 0 0;
+  background-color:#FB16E3;
+}
+
+#static li, .stic{display:inline-block;width:11%;  padding:0.5% 0;
+margin-right:1%;text-align:center; border-radius:40%;
+background-color:#000;font-weight:bolder;}
+body #static{
+  
+  font-size:70%;
+}
+.x1{color:#2DE9F5;}
+.x2{color:blueviolet;}
+.x3{color:#FB16E3;}
+.x0{color:red;}
+
+.sec{
+  
+  background-color:#353537;
+  padding:2% 0;
+}
+
+.dream h3{text-align:center;color:#ccc;}
+.sec ul{position:absolute;
+display:none;background-color:#353537;
+overflow:scroll;
+  top:0;
+  left:0;
+  right:0;
+  width:100%;
+  height:30em;}
+  
+.dream ul li{ display:inline-block;
+box-shadow:1px 1px 3px black;
+background-color:#ddd;text-align:center;
+width:14%; margin:1%; padding:2% 1%;}
+
+.dream ul li:nth-child(odd){
+  background-color:WhiteSmoke;
+}
+.dream ul li:hover{background-color:greenYellow;}
+
+/* clock */
+fieldset{
+  width:10em;
+  clear:both;
+  font-size:80%;
+  display:block;
+
+  margin:2% auto;
+  height:auto;
+}
+
+.dreamH table{
+  width:100%;
+}
+
+
+.dreamH section
+{
+  width:100%;
+  
+background: #19172e;
+display: block;
+justify-content: center;
+align-items: center;
+}
+
+.dreamH .clock
+{
+width: 100%;
+height: 3em;
+backdrop-filter: blur(20px);
+background: rgba(255,255,255,0.05);
+border-radius: 20px;
+z-index: 100;
+box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+border: 1px solid rgba(255,255,255,0.1);
+}
+ .dreamH .clock .container
+{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;
+}
+.dreamH .clock .container h2
+{
+font-size: 1em;
+color: #fff;
+}
+.dreamH .clock .container h2:nth-child(odd)
+{
+padding: 5px 15px;
+border-radius: 10px;
+background: rgba(255,255,255,0.05);
+box-shadow: 0 15px 15px rgba(0,0,0,0.2);
+margin: 0 10px;
+border-bottom: 1px solid rgba(255,255,255,0.1);
+border-right: 1px solid rgba(255,255,255,0.1);
+}
+.dreamH .clock .container h2:nth-child(3)
+{
+background: #f00;
+}
+.dreamH .clock .container #seconds
+{
+color: #f9d524;
+}
+
+.dreamH ul li{ display:inline-block;
+box-shadow:1px 1px 3px black;
+background-color:#ddd;text-align:center;
+width:14%; margin:1%; padding:2% 1%;}
+
+.dreamH ul li:nth-child(odd){
+  background-color:WhiteSmoke;
+}ul li:hover, input:hover{background-color:white;}
