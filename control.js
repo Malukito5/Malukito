@@ -3,7 +3,7 @@ var user={
 	senha: ["mel","estrela","dipanda","fugete","escuro","abelha","kill","natal"],
 	time: [new Date("2024/11/24"),new Date("2024/11/29"),new Date("2024/11/27"),new Date("2024/11/30"),new Date("2024/11/26"),new Date("2024/12/1"), new Date("2024/12/10"),new Date("2024/12/23") ]
 };
-var casaAposta, h1;
+var casaAposta=0, h1;
 
 var login = function(){
 	var date = new Date();
