@@ -1,7 +1,7 @@
 var user={
-	num : ["311",'905',"008","112","928","898","505","125"],
+	num : ["311",'905',"009","112","928","898","505","125"],
 	senha: ["mel","estrela","dipanda","fugete","escuro","abelha","kill","natal"],
-	time: [new Date("2024/12/18"),new Date("2024/12/30"),new Date("2024/12/7"),new Date("2024/11/30"),new Date("2024/12/10"),new Date("2024/12/1"), new Date("2024/12/10"),new Date("2024/12/23") ]
+	time: [new Date("2024/12/18"),new Date("2024/12/30"),new Date("2024/12/14"),new Date("2024/11/30"),new Date("2024/12/10"),new Date("2024/12/1"), new Date("2024/12/10"),new Date("2024/12/23") ]
 };
 var casaAposta=0, h1;
 
